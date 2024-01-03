@@ -13,7 +13,11 @@ fn main() {
 
     let a = [1, 2, 3, 4, 5];
 
-    let slice = &a[1..3];
+    let slice = &a[1..=3];
+
+    for i in slice.iter() {
+        println!("{}", i);
+    }
 }
 
 fn primeira_palavra(s: &str) -> &str {
